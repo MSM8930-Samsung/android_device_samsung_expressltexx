@@ -17,7 +17,7 @@
 package org.cyanogenmod.hardware;
 
 import android.os.SystemProperties;
-import org.cyanogenmod.internal.util.FileUtils;
+import org.cyanogenmod.hardware.util.FileUtils;
 
 /**
  * Support for displaying a different serial number in Settings -> About Phone

@@ -1,0 +1,50 @@
+[
+  {
+    "remote": "github",
+    "repository": "MSM8930-Samsung/android_device_samsung_expressltexx",
+    "target_path": "device/samsung/expressltexx",
+    "branch": "broken6"
+  },
+  {
+    "remote": "github",
+    "repository": "MSM8930-Samsung/android_device_samsung_msm8930-common",
+    "target_path": "device/samsung/msm8930-common",
+    "branch": "broken6"
+  },
+  {
+    "remote": "github",
+    "repository": "MSM8930-Samsung/android_device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "branch": "mm6.0"
+  },
+  {
+    "remote": "github",
+    "repository": "MSM8930-Samsung/android_kernel_samsung_msm8930-common",
+    "target_path": "kernel/samsung/msm8930-common",
+    "branch": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository": "MSM8930-Samsung/proprietary_vendor_samsung_expressltexx",
+    "target_path": "vendor/samsung/expressltexx",
+    "branch": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository": "CyanogenMod/android_hardware_samsung",
+    "target_path": "hardware/samsung",
+    "branch": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository": "CyanogenMod/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch": "cm-13.0"
+  },
+  {
+    "remote": "github",
+    "repository": "CyanogenMod/android_external_stlport",
+    "target_path": "external/stlport",
+    "branch": "cm-13.0"
+  }
+]
