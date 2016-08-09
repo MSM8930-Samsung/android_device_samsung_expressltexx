@@ -5,8 +5,11 @@
     <!-- NOTE: For all the mixer controls added under usecases or sound devices -->
     <!--       we should have an initial mixer setting (default value) -->
     <ctl name="TTY Mode" value="OFF" />
+    <ctl name="SPK DAC Switch" value="0" />
     <ctl name="DAC1 Switch" value="0" />
     <ctl name="COMP1 Switch" value="0" />
+    <ctl name="HPHL DAC Switch" value="0" />
+    <ctl name="EAR PA Gain" value="POS_6_DB" />
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia5" value="0" />
     <ctl name="INTERNAL_BT_SCO_RX_Voice Mixer CSVoice" value="0" />
