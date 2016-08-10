@@ -101,6 +101,3 @@ BOARD_USES_LEGACY_MMAP := true
 # Enable dex pre-optimization with PIC
 WITH_DEXPREOPT := true
 WITH_DEXPREOPT_PIC := true
-
-# Java 8 Support (Requires OpenJDK 8, not oracle)
-EXPERIMENTAL_USE_JAVA8 := true
