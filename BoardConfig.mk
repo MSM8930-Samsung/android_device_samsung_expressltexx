@@ -26,34 +26,30 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/expressltexx/include
 
-BOARD_KERNEL_CMDLINE         := androidboot.hardware=qcom user_debug=22 zcache msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
-BOARD_KERNEL_BASE            := 0x80200000
-BOARD_MKBOOTIMG_ARGS         := --ramdisk_offset 0x02000000
-BOARD_KERNEL_PAGESIZE        := 2048
-TARGET_KERNEL_SOURCE         := kernel/samsung/msm8930-common
-TARGET_KERNEL_CONFIG         := cyanogen_express_defconfig
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=22 zcache msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
+BOARD_KERNEL_BASE := 0x80200000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
+BOARD_KERNEL_PAGESIZE := 2048
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8930-common
+TARGET_KERNEL_CONFIG := cyanogen_express_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_express_eur_lte_defconfig
 
+# Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := expressltexx,expresslte,GT-I8730,GT-I8730T
 
-# NFC
-BOARD_HAVE_NFC := true
-BOARD_NFC_CHIPSET := pn547
-
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/expressltexx/rootdir/fstab.qcom
 
-# Reduce space taken by the journal
-BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
-
+# Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1415577600
+BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5079285760
 BOARD_CACHEIMAGE_PARTITION_SIZE := 880803840
 BOARD_FLASH_BLOCK_SIZE := 131072
