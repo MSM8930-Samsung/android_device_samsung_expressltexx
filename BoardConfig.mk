@@ -89,7 +89,7 @@ COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 BOARD_RIL_CLASS := ../../../device/samsung/expressltexx/ril/
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/expressltexx/cmhw
+BOARD_HARDWARE_CLASS := device/samsung/expressltexx/cmhw
 
 # Legacy MMAP for pre-lollipop blobs
 BOARD_USES_LEGACY_MMAP := true
