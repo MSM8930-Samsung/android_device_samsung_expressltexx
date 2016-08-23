@@ -53,7 +53,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true \
     wifi.interface=wlan0 \
     ro.qualcomm.bt.hci_transport=smd \
-    ro.sdcardfs.enable=true
+    ro.sdcardfs.enable=true \
+    camera.disable_zsl_mode=1
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
