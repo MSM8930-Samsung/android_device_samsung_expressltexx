@@ -122,7 +122,7 @@ lib/libTsAwb.so
 etc/wifi/wpa_supplicant.conf
 
 # Perf
-lib/libqc-opt.so
+vendor/lib/libqti-perfd-client.so
 
 # DRM
 bin/qseecomd
