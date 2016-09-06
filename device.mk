@@ -139,6 +139,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SlimFileManager
 
+# CyanogenMod SoundRecorder
+PRODUCT_PACKAGES += \
+    SoundRecorder
+
 # call common express system props
 $(call inherit-product, device/samsung/expressltexx/system_prop.mk)
 
