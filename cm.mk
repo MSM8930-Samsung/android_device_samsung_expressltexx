@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The Android Open Source Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +14,20 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit from expressltexx device
 $(call inherit-product, device/samsung/expressltexx/device.mk)
 
-# Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_expressltexx
+# Enhanced NFC
+# $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+PRODUCT_NAME := cm_expressltexx
 PRODUCT_DEVICE := expressltexx
 PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-I8730
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_MODEL := GT-i8730
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=expressltexx TARGET_DEVICE=expresslte

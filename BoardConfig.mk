@@ -1,4 +1,3 @@
-
 # Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,6 +26,7 @@
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/expressltexx/include
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=22 zcache msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -69,7 +69,7 @@ BOARD_NO_CHARGER_LED := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Needed for LPA
-COMMON_GLOBAL_CFLAGS += -DLPA_DEFAULT_BUFFER_SIZE=32
+BOARD_GLOBAL_CFLAGS += -DLPA_DEFAULT_BUFFER_SIZE=32
 
 # FM
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
@@ -85,15 +85,15 @@ TARGET_NEED_DISABLE_FACE_DETECTION := true
 TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 
 # RIL
-COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
+TARGET_RIL_VARIANT := caf
+BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 BOARD_RIL_CLASS := ../../../device/samsung/expressltexx/ril/
+
+# Time service
+BOARD_USES_QC_TIME_SERVICES := true
 
 # CMHW
 BOARD_HARDWARE_CLASS := device/samsung/expressltexx/cmhw
 
 # Legacy MMAP for pre-lollipop blobs
 BOARD_USES_LEGACY_MMAP := true
-
-# Enable dex pre-optimization with PIC
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_PIC := true

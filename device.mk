@@ -12,10 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
-# Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/expressltexx/expressltexx-vendor.mk)
+# Also get non-open-source specific aspects
+$(call inherit-product, vendor/samsung/expressltexx/expressltexx-vendor.mk)
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -106,7 +104,6 @@ PRODUCT_PACKAGES += \
 # FM radio
 PRODUCT_PACKAGES += \
     FM2 \
-    libqcomfm_jni \
     qcom.fmradio
 
 # Lights
