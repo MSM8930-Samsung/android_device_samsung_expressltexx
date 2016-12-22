@@ -24,6 +24,12 @@ $(call inherit-product, device/samsung/expressltexx/device.mk)
 # Inherit some common slim stuff.
 $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
+# Misc missing apps
+PRODUCT_PACKAGES += \
+    Browser \
+    messaging \
+    SoundRecorder
+
 PRODUCT_NAME := slim_expressltexx
 PRODUCT_DEVICE := expressltexx
 PRODUCT_BRAND := samsung
