@@ -74,14 +74,6 @@
          config_hardware_automatic_brightness_available is not set, so we will use software implementation -->
     <bool name="config_automatic_brightness_available">true</bool>
 
-    <!-- Control whether being in the desk dock should enable accelerometer
-         based screen orientation.  This defaults to true because it is
-         common for desk docks to be sold in a variety of form factors
-         with different orientations.  Since we cannot always tell these docks
-         apart and the docks cannot report their true orientation on their own,
-         we rely on gravity to determine the effective orientation. -->
-    <bool name="config_deskDockEnablesAccelerometer">false</bool>
-
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
