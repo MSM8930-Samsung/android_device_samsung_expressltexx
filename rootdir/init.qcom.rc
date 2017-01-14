@@ -306,5 +306,5 @@ on property:sys.boot_completed=1
 
     # Adaptive LMK
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 0
-    write /sys/module/lowmemorykiller/parameters/minfree "4392,6588,8784,10980,13176,15372"
+    write /sys/module/lowmemorykiller/parameters/minfree "8192,10240,12288,14336,16384,20480"
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
