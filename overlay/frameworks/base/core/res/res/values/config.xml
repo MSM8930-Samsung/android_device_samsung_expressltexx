@@ -119,10 +119,6 @@
         <item>10</item>
         <item>10</item>
     </integer-array>
-
-    <!-- Minimum screen brightness setting allowed by the power manager.
-         The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">5</integer>
 	
 	<!-- Disable lockscreen rotation by default --> 
     <bool name="config_enableLockScreenRotation">false</bool>
